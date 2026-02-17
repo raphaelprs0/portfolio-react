@@ -15,6 +15,10 @@ Portfolio personnel développé avec Next.js 16, React 19 et Three.js.
 ```
 portfolio-react/
 ├── app/                          # App Router Next.js
+│   ├── api/                      # API Routes
+│   │   └── contact/
+│   │       └── route.ts         # Endpoint pour l'envoi d'emails
+│   │
 │   ├── components/               # Composants React
 │   │   ├── About.tsx            # Section "À propos" avec bento grid
 │   │   ├── Background.tsx       # Wrapper pour le background Silk 3D
@@ -40,11 +44,13 @@ portfolio-react/
 │   └── Silk.jsx                 # Shader Three.js pour l'animation de fond
 │
 ├── public/                       # Assets statiques
+│   ├── audio/                   # Fichiers audio MP3 (musique)
 │   └── images/
 │       ├── Cover/               # Covers des albums (musique)
 │       ├── Passions/            # Images des passions
 │       └── Project/             # Screenshots des projets
 │
+├── .env.example                 # Template des variables d'environnement
 ├── next.config.ts               # Configuration Next.js
 ├── tsconfig.json                # Configuration TypeScript
 └── package.json                 # Dépendances et scripts
@@ -65,6 +71,12 @@ portfolio-react/
 | `PassionModal.tsx` | Modal qui s'ouvre au clic sur une passion pour afficher l'image et la description détaillée |
 | `ProjectModal.tsx` | Modal pour les projets avec image, description, technologies utilisées et liens (GitHub/Live) |
 | `Projects.tsx` | Grille de cartes projet avec image, titre et tags technologiques |
+
+### `/app/api/`
+
+| Fichier | Description |
+|---------|-------------|
+| `contact/route.ts` | API Route POST pour envoyer des emails via Nodemailer (Gmail). Reçoit name, email, message en JSON |
 
 ### `/app/lib/`
 
@@ -132,11 +144,29 @@ Modifier `app/lib/data.ts` et ajouter un objet dans le tableau `projects`:
 ### Ajouter une traduction
 Ajouter les clés dans `app/lib/translations.ts` pour les deux langues (en et fr).
 
-## 📦 Dépendances (4 seulement)
+## 📦 Dépendances
 
 - `next` - Framework
 - `react` + `react-dom` - UI
 - `@react-three/fiber` + `three` - Animation 3D
+- `nodemailer` - Envoi d'emails (formulaire de contact)
+
+## ⚙️ Configuration
+
+### Variables d'environnement
+
+Pour activer le formulaire de contact, crée un fichier `.env.local` à la racine :
+
+```env
+EMAIL_USER=ton.email@gmail.com
+EMAIL_PASS=ton_mot_de_passe_application
+```
+
+**Pour Gmail**, tu dois utiliser un **mot de passe d'application** :
+1. Active la validation en 2 étapes sur ton compte Google
+2. Va dans [Mots de passe des applications](https://myaccount.google.com/apppasswords)
+3. Crée un mot de passe pour "Mail"
+4. Utilise ce mot de passe généré dans `EMAIL_PASS`
 
 ## 📱 Responsive
 
