@@ -70,6 +70,8 @@ export const translations = {
     "contact.email": "Email",
     "contact.message": "Message",
     "contact.send": "Send",
+    "contact.success": "Message sent successfully!",
+    "contact.error": "Error sending message. Please try again.",
   },
   fr: {
     // Navigation
@@ -142,6 +144,8 @@ export const translations = {
     "contact.email": "Email",
     "contact.message": "Message",
     "contact.send": "Envoyer",
+    "contact.success": "Message envoyé avec succès !",
+    "contact.error": "Erreur lors de l'envoi. Veuillez réessayer.",
   },
 } as const;
 

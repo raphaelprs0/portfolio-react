@@ -67,6 +67,12 @@ export default function Contact() {
         <button type="submit" className="btn-primary full-width" disabled={status === "sending"}>
           {status === "sending" ? "..." : t("contact.send")}
         </button>
+        {status === "success" && (
+          <p className="form-message success">{t("contact.success")}</p>
+        )}
+        {status === "error" && (
+          <p className="form-message error">{t("contact.error")}</p>
+        )}
       </form>
 
       <div className="social-grid">

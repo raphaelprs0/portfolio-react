@@ -14,7 +14,8 @@ export async function POST(request: Request) {
 
   try {
     await transporter.sendMail({
-      from: email,
+      from: process.env.EMAIL_USER,
+      replyTo: email,
       to: process.env.EMAIL_USER,
       subject: `Nouveau message Portfolio de ${name}`,
       text: `De: ${name} (${email})\n\nMessage:\n${message}`,
