@@ -39,8 +39,8 @@ export default function ProjectModal({ projectId, onClose }: ProjectModalProps) 
             ))}
           </div>
           <div className="project-links">
-            {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+            {(project as any).github && (
+              <a href={(project as any).github} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 <i className="ri-github-line"></i> GitHub
               </a>
             )}
