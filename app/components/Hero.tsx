@@ -46,20 +46,20 @@ export default function Hero({ onNavigate }: HeroProps) {
     <div className="container hero-container">
       {/* 3. Intégration du SplitText à la place du h1 standard */}
       <SplitText
-        text={t("home.title")} // Utilisation du texte de traduction
-        className="text-2xl font-semibold text-center hero-title" // J'ai gardé vos classes et ajouté 'hero-title' au cas où vous auriez du CSS spécifique
-        delay={50}
-        duration={1.25}
-        ease="power3.out"
-        splitType="chars"
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity: 1, y: 0 }}
-        threshold={0.1}
-        rootMargin="-100px"
-        textAlign="center"
-        onLetterAnimationComplete={handleAnimationComplete}
-        showCallback
-      />
+  text={t("home.title") as string} // AJOUTER "as string" ICI
+  className="text-2xl font-semibold text-center hero-title"
+  delay={50}
+  duration={1.25}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+  showCallback
+/>
 
       <h2 className="typewriter">
         <span className="txt-type">{text}</span>
