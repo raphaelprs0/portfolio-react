@@ -69,11 +69,18 @@ void main() {
 `;
 
 const SilkPlane = forwardRef(function SilkPlane({ uniforms }, ref) {
-  const { viewport } = useThree();
+  const { viewport, size } = useThree();
+  const initialSize = useRef(null);
 
   useLayoutEffect(() => {
     if (ref.current) {
-      ref.current.scale.set(viewport.width, viewport.height, 1);
+      // Store initial size and use max to prevent shrinking on mobile
+      if (!initialSize.current) {
+        initialSize.current = { width: viewport.width, height: viewport.height };
+      }
+      const width = Math.max(viewport.width, initialSize.current.width) * 1.2;
+      const height = Math.max(viewport.height, initialSize.current.height) * 1.2;
+      ref.current.scale.set(width, height, 1);
     }
   }, [ref, viewport]);
 
@@ -106,7 +113,7 @@ const Silk = ({ speed = 5, scale = 1, color = '#7B7481', noiseIntensity = 1.5, r
   );
 
   return (
-    <Canvas dpr={[1, 2]} frameloop="always">
+    <Canvas dpr={[1, 2]} frameloop="always" resize={{ scroll: false, debounce: { scroll: 0, resize: 300 } }}>
       <SilkPlane ref={meshRef} uniforms={uniforms} />
     </Canvas>
   );

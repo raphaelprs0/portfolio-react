@@ -9,10 +9,10 @@ export const passions = [
     id: "cars", 
     icon: "🏎️", 
     image: "/images/Passions/Porsche.jpg",
-    title: { en: "Cars", fr: "Voitures" },
+    title: { en: "Cars / Motorsports", fr: "Voitures / Sport automobile" },
     description: { 
-      en: "I'm passionate about cars and Motorsports. From F1 to vintage Porsches, I love everything about automotive engineering and design.",
-      fr: "Je suis passionné par les voitures et le Motorsport. De la F1 aux Porsche vintage, j'adore tout ce qui touche à l'ingénierie et au design automobile."
+      en: "Passionate about motorsports and cars. I follow Formula 1, Endurance racing (24h of Le Mans), and Rally. My favourite car brand has been Ferrari since I was little.",
+      fr: "Passionné  de voitures et de sport automobile. Je suis la F1, l'Endurance (24h du Mans) et le Rallye. Ma marque de voiture préférée est Ferrari depuis petit."
     }
   },
   { 
@@ -21,8 +21,8 @@ export const passions = [
     image: "/images/Passions/Logic-Pro.webp",
     title: { en: "Music Production", fr: "Production Musicale" },
     description: { 
-      en: "I produce beats and music in my free time using Logic Pro. It's a creative outlet that complements my technical work.",
-      fr: "Je produis des beats et de la musique pendant mon temps libre avec Logic Pro. C'est un exutoire créatif qui complète mon travail technique."
+      en: "Creating Productions on Logic Pro allows me to work on my creative side. I like to experiment with all styles, from hip-hop to house music.",
+      fr: "Créer des Productions sur Logic Pro me permet de travailler mon coté créatif. J'aime expérimenter tous les styles, du hip-hop à la house."
     }
   },
   { 
@@ -31,8 +31,8 @@ export const passions = [
     image: "/images/Passions/Boxe.webp",
     title: { en: "Sports", fr: "Sports" },
     description: { 
-      en: "I practice boxing to stay in shape and maintain discipline. It teaches focus, resilience and dedication.",
-      fr: "Je pratique la boxe pour rester en forme et maintenir ma discipline. Ça enseigne la concentration, la résilience et le dévouement."
+      en: "Boxing keeps me disciplined and focused, while the gym helps me build strength. Both teach me perseverance and discipline.",
+      fr: "La boxe me garde discipliné et concentré, la salle m'aide à développer ma force. Les deux m'enseignent la persévérance."
     }
   },
   { 
@@ -41,18 +41,18 @@ export const passions = [
     image: "/images/Passions/Travel.webp",
     title: { en: "Travel", fr: "Voyages" },
     description: { 
-      en: "Exploring new cultures and places broadens my perspective. Every trip is an opportunity to learn and grow.",
-      fr: "Explorer de nouvelles cultures et de nouveaux endroits élargit ma perspective. Chaque voyage est une opportunité d'apprendre et de grandir."
+      en: "Exploring new cultures across the world. From Lisbon to Punta Cana, traveling opens my mind and inspires creativity.",
+      fr: "Explorer de nouvelles cultures. De Lisbonne à Punta Cana, voyager ouvre mon esprit et inspire ma créativité."
     }
   },
   { 
     id: "watches", 
     icon: "⌚", 
     image: "/images/Passions/Rolex.webp",
-    title: { en: "Watches", fr: "Montres" },
+    title: { en: "Watches", fr: "Horlogerie" },
     description: { 
-      en: "I appreciate the craftsmanship and engineering behind fine timepieces. They represent the perfect blend of art and technology.",
-      fr: "J'apprécie l'artisanat et l'ingénierie derrière les belles montres. Elles représentent le mélange parfait entre art et technologie."
+      en: "Fascinated by horology. From Rolex to Jaeger-Lecoultre. I'm working on creating my own custom timepieces.",
+      fr: "Fasciné par l'horlogerie. De Rolex à Jaeger-Lecoultre. Je travaille également sur la création de mes propres montres."
     }
   },
 ];
@@ -60,11 +60,11 @@ export const passions = [
 export const projects = [
   {
     id: "grass",
-    title: "Laying Grass",
+    title: "Laying Grass Game",
     image: "/images/Project/Laying-grass.webp",
     description: {
-      en: "A C++ project simulating grass laying algorithms and terrain generation.",
-      fr: "Un projet C++ simulant des algorithmes de pose de gazon et génération de terrain."
+      en: "High-performance game engine built in C++ featuring an optimized inventory system, real-time resource tracking, and smooth gameplay mechanics.",
+      fr: "Jeu haute performance créé en C++ avec système d'inventaire optimisé, suivi des ressources en temps réel et mécanique de jeu fluide."
     },
     tech: ["C++"],
     tags: ["C++"],
@@ -74,8 +74,8 @@ export const projects = [
     title: "SEO Website",
     image: "/images/Project/seo-website.webp",
     description: {
-      en: "A fully optimized SEO website for a freelance developer in Paris.",
-      fr: "Un site web entièrement optimisé SEO pour un développeur freelance à Paris."
+      en: "A comprehensive SEO-optimized website with keyword analysis tools, site audit capabilities, and Google referencing integration.",
+      fr: "Site web optimisé SEO avec outils d'analyse de mots-clés, audit de site et intégration du référencement Google."
     },
     tech: ["HTML", "CSS", "SEO"],
     tags: ["HTML", "CSS", "SEO"],
@@ -83,23 +83,22 @@ export const projects = [
   },
   {
     id: "imdb",
-    title: "IMDB Clone",
+    title: "Internet Movies DataBase",
     image: "/images/Project/imdb.webp",
     description: {
-      en: "A movie database clone built with PHP and SQL for database management practice.",
-      fr: "Un clone de base de données de films construit avec PHP et SQL."
+      en: "A movie discovery platform built with PHP and SQL, featuring real-time analytics and advanced filtering options.",
+      fr: "Plateforme de découverte de films en PHP/SQL avec analyses en temps réel et options de filtrage avancées."
     },
     tech: ["PHP", "SQL"],
     tags: ["PHP", "SQL"],
-    github: "https://github.com/raphaelprs0/imdb-clone",
   },
   {
     id: "rail",
-    title: "Suprailroad",
+    title: "SupRailRoad App",
     image: "/images/Project/Suprailroad.webp",
     description: {
-      en: "A UI/UX design project for a modern train booking application.",
-      fr: "Un projet de design UI/UX pour une application moderne de réservation de train."
+      en: "A modern transportation app design created in Figma with intuitive UI and real-time booking system.",
+      fr: "Design d'application de transport moderne créé sur Figma avec UI intuitive et système de réservation en temps réel."
     },
     tech: ["Figma", "UI", "UX"],
     tags: ["Figma", "UI", "UX"],
