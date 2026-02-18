@@ -130,6 +130,18 @@ export const tracks = [
     cover: "/images/Cover/Broski.webp",
     audio: "/audio/Broski.mp3"
   },
+  { 
+    title: "Is It a Crime", 
+    artist: "Sade", 
+    cover: "/images/Cover/Sade-cover.webp",
+    audio: "/audio/Is it a crime.mp3"
+  },
+  { 
+    title: "Mercury", 
+    artist: "Dave", 
+    cover: "/images/Cover/Dave.webp",
+    audio: "/audio/Mercury.mp3"
+  },
 ];
 
 export const socials = [
