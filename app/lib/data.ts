@@ -134,7 +134,7 @@ export const tracks = [
     title: "Is It a Crime", 
     artist: "Sade", 
     cover: "/images/Cover/Sade-cover.webp",
-    audio: "/audio/Is it a crime.mp3"
+    audio: "/audio/Is-It-a-Crime.mp3"
   },
   { 
     title: "Mercury", 
