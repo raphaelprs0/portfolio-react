@@ -106,7 +106,7 @@ export const projects = [
   {
     id: "virtualization",
     title: "Windows Server Administrator",
-    image: "/images/Project/Virtualization.jpeg",
+    image: "/images/Project/Virtualization.webp",
     description: {
       en: "A virtualization project using VMware with optimized performance and seamless integration.",
       fr: "Un projet de virtualisation utilisant VMware avec performance optimisée et intégration transparente."
