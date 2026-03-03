@@ -103,6 +103,17 @@ export const projects = [
     tech: ["Figma", "UI", "UX"],
     tags: ["Figma", "UI", "UX"],
   },
+  {
+    id: "virtualization",
+    title: "Windows Server Administrator",
+    image: "/images/Project/Virtualization.jpeg",
+    description: {
+      en: "A virtualization project using VMware with optimized performance and seamless integration.",
+      fr: "Un projet de virtualisation utilisant VMware avec performance optimisée et intégration transparente."
+    },
+    tech: ["VmWare", "Windows Server", "GLPI"],
+    tags: ["VmWare", "Windows Server", "GLPI"],
+  },
 ];
 
 export const tracks = [

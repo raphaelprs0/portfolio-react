@@ -61,6 +61,9 @@ export const translations = {
     "project.rail.title": "SupRailRoad App",
     "project.rail.description": "A modern transportation app design created in Figma with intuitive UI and real-time booking system.",
     "project.rail.short": "Modern transportation app design with intuitive UI.",
+    "project.virtualization.title": "Windows Server Administrator",
+    "project.virtualization.description": "Virtualization project using VMware with optimized performance and seamless integration.",
+    "project.virtualization.short": "VMware virtualization project with optimized performance.",
     // Music
     "music.title": "My Playlist",
     "music.playlist": "All Tracks",
@@ -136,6 +139,9 @@ export const translations = {
     "project.rail.title": "App SupRailRoad",
     "project.rail.description": "Design d'application de transport moderne créé sur Figma avec UI intuitive et système de réservation en temps réel.",
     "project.rail.short": "Design d'app transport avec UI intuitive.",
+    "project.virtualization.title": "Windows Server Administrator",
+    "project.virtualization.description": "Projet de virtualisation utilisant VMware avec performance optimisée et intégration transparente.",
+    "project.virtualization.short": "Virtualisation VMware avec performance optimisée.",
     // Music
     "music.title": "Ma Playlist",
     "music.playlist": "Tous les titres",
